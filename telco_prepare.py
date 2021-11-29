@@ -18,7 +18,7 @@ def prep_telco(df):
     '''
 
     # Drop redundant and unhelpful columns.
-    df.drop(columns=['payment_type_id', 'internet_service_type_id', 'contract_type_id', 'customer_id'], inplace=True)
+    df.drop(columns=['payment_type_id', 'internet_service_type_id', 'contract_type_id'], inplace=True)
 
     # Drop customers with no tenure or total charges
     df['total_charges'] = df['total_charges'].str.strip()
