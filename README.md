@@ -38,19 +38,42 @@ Once we have this information, we can devise new customer retention strategies.
 
 ### Data Dictionary
 
-List each variable
+## Data Dictionary
+
+|Target|Datatype|Definition|
+|:-------|:--------|:----------|
+| churn_encoded | int64 | 0: Customer retained 1: Customer Churned|
+
+
+</br>
+</br>
+
+</br>
+
+
+|Feature|Datatype|Definition|
+|:-------|:--------|:----------|
+| senior_citizen       | int64 |    0: Not Senior 1: Senior |
+| monthly_charges        | float64 |    month;y charges in dollars |
+| tenure       |  int64 |    tenure in months |
+| paperless_billing_encoded        | int64 |    i0: no paperless billing 1:paperless billing |
+| internet_service_type_Fiber optic        | uint8 |    0: No fiber 1: fiber |
+| payment_type_Electronic check        | uint8 |    0: no e-check 1:e-check |
 
 ### Steps to Reproduce
 
-1. Acquire date from telco database
-2. Clean data
-3. Split Data
-4. Build Models
-5. Validate Models
-6. Test best model
-7. Create and export predictions
+You will need your own env file with database credentials along with all the necessary files listed below to run my final project notebook. 
+- [x] Read this README.md
+- [ ] Download the telco_aquire.py, telco_prepare.py, and telco_project_report.ipynb files into your working directory
+- [ ] Add your own env file to your directory. (user, password, host)
+- [ ] telco_project_report.ipynb
+
+
+
 
 ### The Plan
+
+![story map](story_map.jpg)
 
 1. **Acquire, clean, prepare, and split the data:**
     - Pull from telco database.
