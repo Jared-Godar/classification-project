@@ -55,7 +55,8 @@ Once we have this information, we can devise new customer retention strategies.
 |:-------|:--------|:----------|
 | senior_citizen       | int64 |    0: Not Senior 1: Senior |
 | monthly_charges        | float64 |    month;y charges in dollars |
-| tenure       |  int64 |    tenure in months |
+| tenure       | 
+ int64 |    tenure in months |
 | paperless_billing_encoded        | int64 |    i0: no paperless billing 1:paperless billing |
 | internet_service_type_Fiber optic        | uint8 |    0: No fiber 1: fiber |
 | payment_type_Electronic check        | uint8 |    0: no e-check 1:e-check |
